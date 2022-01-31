@@ -7,6 +7,7 @@ edition = "2021"
 
 [dependencies]
 arloader = "0.1.55"
+glob = "0.3.0"
 serde = "1.0.136"
 serde_json = "1.0.78"
 tokio = { version = "1", features = ["rt-multi-thread", "fs", "macros", ] }

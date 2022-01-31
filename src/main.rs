@@ -1,7 +1,7 @@
-use arloader::{commands::*, error::Error, status::OutputFormat, Arweave};
+use arloader::{commands::*, status::OutputFormat, Arweave};
 use serde::Deserialize;
 use serde_json::json;
-use std::{env, fs, path::PathBuf, str::FromStr};
+use std::{env, fs, path::PathBuf};
 
 #[derive(Deserialize)]
 struct Member {
@@ -38,9 +38,32 @@ fn files_setup() {
             .unwrap(),
         )
         .unwrap();
-    })
+    });
 }
 #[tokio::main]
 async fn main() {
-    files_setup()
+    let sol_keypair_path = env::var("SOL_KEYPAIR_PATH").ok().map(PathBuf::from);
+    if sol_keypair_path.is_none() {
+        println!("SOL_KEYPAIR_PATH environment variable must be set.");
+        return ();
+    };
+
+    files_setup();
+
+    env::set_current_dir(PathBuf::from("assets/")).unwrap();
+    let paths_iter = glob::glob("*.png").unwrap().flat_map(Result::ok);
+
+    command_upload_nfts(
+        &Arweave::default(),
+        paths_iter,
+        None,
+        10_000_000,
+        2.,
+        &OutputFormat::Display,
+        5,
+        sol_keypair_path,
+        false,
+    )
+    .await
+    .unwrap();
 }

@@ -2471,6 +2471,7 @@ name = "wepledge-nfts"
 version = "0.1.0"
 dependencies = [
  "arloader",
+ "glob",
  "serde",
  "serde_json",
  "tokio",
