@@ -42,7 +42,7 @@ interface Attribute {
 
 function Member(props: { nft: NFT }) {
   return (
-    <Grid item xs={12} sm={3}>
+    <Grid item xs={12} sm={6} md={3}>
       <Card>
         <CardActionArea href={`https://explorer.solana.com/address/${props.nft.mint_address_string}?cluster=devnet`} target="_blank">
           <CardMedia
