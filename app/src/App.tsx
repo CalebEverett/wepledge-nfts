@@ -14,9 +14,16 @@ import { Connection, PublicKey } from '@solana/web3.js';
 
 let connection = new Connection("https://api.devnet.solana.com", "confirmed");
 let mint_address_strings = [
-  "C9c6CoogeKrfawnqt5yviV5Fg54T6oXm7VVQo8kJTGcu",
-  "4Fu2CMQyq61ZafyLZVCuhZWWrDhD37PuG38tpRYE1VpC",
-  "BPDYiMFz8coKrQnD532xi1EPhqihwawXRPrzhd2EaNws"
+  "EWPTNEDRUQjt7WNN2PDXfD69PewNaKKsfjWY8YCZyRHK",
+  "Gxw6JKDMc8ULCxXWQexPbYHQHR3EqzJ52Y89hru1yud5",
+  "3rEDaZsUPWgpfFmLVc7snPGMSjPrbZvRvYqx3EedNvvv",
+  "FFJqqcfQZybRRpeGFdusgb71xxovyKbc34ikJbUaC5uW",
+  "GjEepgGPcxUHMgvGwexyanfrUFviZ6QRDxBR5D9F3Re4",
+  "HMxjLuFLgFouhxxmkb6rUYuJ3V18RzNFXeNMvbL9LFhQ",
+  "5J7z22D86SBWtF6dECzz2eNwqaYXEqbXFyPpLTVZtjiZ",
+  "EwCfaYcRcaDVhNKYgi3MJ7oZpziLkuxJZFpM4sAo9RuK",
+  "dKpNS5dEofAcUESPbZKa2WZt6oieeNBXCVAKZnyP857",
+  "Eo9NELZR8TGnwhz8qPZLz2CAZyMEQtZujhC5Bo7FWPpU"
 ]
 
 interface NFT {
