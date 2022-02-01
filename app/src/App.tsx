@@ -17,7 +17,7 @@ let mint_address_strings = [
   "EWPTNEDRUQjt7WNN2PDXfD69PewNaKKsfjWY8YCZyRHK",
   "Gxw6JKDMc8ULCxXWQexPbYHQHR3EqzJ52Y89hru1yud5",
   "3rEDaZsUPWgpfFmLVc7snPGMSjPrbZvRvYqx3EedNvvv",
-  "FFJqqcfQZybRRpeGFdusgb71xxovyKbc34ikJbUaC5uW",
+  // "FFJqqcfQZybRRpeGFdusgb71xxovyKbc34ikJbUaC5uW",
   "GjEepgGPcxUHMgvGwexyanfrUFviZ6QRDxBR5D9F3Re4",
   "HMxjLuFLgFouhxxmkb6rUYuJ3V18RzNFXeNMvbL9LFhQ",
   "5J7z22D86SBWtF6dECzz2eNwqaYXEqbXFyPpLTVZtjiZ",
