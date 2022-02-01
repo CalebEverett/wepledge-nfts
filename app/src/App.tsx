@@ -11,7 +11,6 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 
 import { Connection, PublicKey } from '@solana/web3.js';
-import * as borsh from 'borsh';
 
 let connection = new Connection("https://api.devnet.solana.com", "confirmed");
 let mint_address_strings = [
@@ -67,8 +66,8 @@ function App() {
     let metadata = await (await fetch(nft.uri.toString())).json();
     nft.image = metadata.image;
     let attributes: Array<Attribute> = metadata.attributes;
-    nft.organization = attributes.filter(attr => attr.trait_type == "organization")[0].value;
-    nft.cohort = attributes.filter(attr => attr.trait_type == "cohort")[0].value;
+    nft.organization = attributes.filter(attr => attr.trait_type === "organization")[0].value;
+    nft.cohort = attributes.filter(attr => attr.trait_type === "cohort")[0].value;
     return nft;
   }
 
@@ -79,7 +78,7 @@ function App() {
         setNfts(nfts)
       }
     })();
-  }, [mint_address_strings]
+  }, []
   )
 
   return (
@@ -95,7 +94,7 @@ function App() {
         </Typography>
       </Box>
       <Grid container spacing={3}>
-        {nfts.filter(nft => nft.cohort == "Founding").map((nft, i) => <Member nft={nft} key={i.toString()} />)}
+        {nfts.filter(nft => nft.cohort === "Founding").map((nft, i) => <Member nft={nft} key={i.toString()} />)}
       </Grid >
       <Box sx={{ my: 4 }}>
         <Typography variant="h5" component="h1" gutterBottom color="textSecondary">
