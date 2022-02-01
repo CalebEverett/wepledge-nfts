@@ -6,21 +6,21 @@
         "token": "EWPTNEDRUQjt7WNN2PDXfD69PewNaKKsfjWY8YCZyRHK"
     },
     {
-        "name": "Zoom",
-        "cohort": "Founding",
-        "image": "Zoom.png",
-        "token": "Gxw6JKDMc8ULCxXWQexPbYHQHR3EqzJ52Y89hru1yud5"
-    },
-    {
         "name": "Atlassian",
         "cohort": "Founding",
         "image": "Atlassian.png",
-        "token": "3rEDaZsUPWgpfFmLVc7snPGMSjPrbZvRvYqx3EedNvvv"
+        "token": "Gxw6JKDMc8ULCxXWQexPbYHQHR3EqzJ52Y89hru1yud5"
     },
     {
         "name": "OKTA",
         "cohort": "Founding",
         "image": "OKTA.png",
+        "token": "3rEDaZsUPWgpfFmLVc7snPGMSjPrbZvRvYqx3EedNvvv"
+    },
+    {
+        "name": "Zoom",
+        "cohort": "Founding",
+        "image": "Zoom.png",
         "token": "FFJqqcfQZybRRpeGFdusgb71xxovyKbc34ikJbUaC5uW"
     },
     {
