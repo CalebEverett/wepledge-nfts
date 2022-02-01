@@ -102,7 +102,7 @@ function App() {
         </Typography>
       </Box>
       <Grid container spacing={3}>
-        {nfts.filter(nft => nft.cohort == "2021-07").map((nft, i) => <Member nft={nft} key={i.toString()} />)}
+        {nfts.filter(nft => nft.cohort === "2021-07").map((nft, i) => <Member nft={nft} key={i.toString()} />)}
       </Grid >
     </Container>
   );
