@@ -12,19 +12,21 @@ import Button from '@mui/material/Button';
 
 import { Connection, PublicKey } from '@solana/web3.js';
 
-let connection = new Connection("https://api.devnet.solana.com", "confirmed");
+let connection = new Connection("https://api.mainnet-beta.solana.com", "confirmed");
+
 let mint_address_strings = [
-  "EWPTNEDRUQjt7WNN2PDXfD69PewNaKKsfjWY8YCZyRHK",
-  "Gxw6JKDMc8ULCxXWQexPbYHQHR3EqzJ52Y89hru1yud5",
-  "3rEDaZsUPWgpfFmLVc7snPGMSjPrbZvRvYqx3EedNvvv",
-  // "FFJqqcfQZybRRpeGFdusgb71xxovyKbc34ikJbUaC5uW",
-  "GjEepgGPcxUHMgvGwexyanfrUFviZ6QRDxBR5D9F3Re4",
-  "HMxjLuFLgFouhxxmkb6rUYuJ3V18RzNFXeNMvbL9LFhQ",
-  "5J7z22D86SBWtF6dECzz2eNwqaYXEqbXFyPpLTVZtjiZ",
-  "EwCfaYcRcaDVhNKYgi3MJ7oZpziLkuxJZFpM4sAo9RuK",
-  "dKpNS5dEofAcUESPbZKa2WZt6oieeNBXCVAKZnyP857",
-  "Eo9NELZR8TGnwhz8qPZLz2CAZyMEQtZujhC5Bo7FWPpU"
-]
+  "Doxn3sz65obsH3XFBqEMivgQwcbKmtLBn2dbV6XwhJ8D",
+  "2sekHAHBg4QSYiiFiKWePE8zVeNNxJzkV6atuei15xWa",
+  "GzkCChSicC7K3iy4EzMvtU4XfC4gjHRDV3nQnmHiQpZ4",
+  "GhFdtRr32tdqGTZp5xevtqdb8KBU3KLHfYfDhhJ8N6D2",
+  "F1gVwG3J1zNvzM66AzKcoVEGt6cKjWTj8UUHmELbTTJL",
+  "91xK5oCTrrWfMeSNambWJQLMJTH5E1QZqEV9rW9XQKPt",
+  "Eb5DtMz5q4uQUiaUTRyRUcNavGQXXY4Rdq1U1z3LHgCg",
+  "Eq4xw6ETFoYqh8SihsYS4Gbu3Pc6AjcdNtgrHcZ1sJmf",
+  "JT9FxzoivUfNaE6twVpbuWVF9aTBx681CVaNiXzxQWt",
+  "DRAydboahjhf5UhgWRB9k2TTbBtZuvk4DH7uvePLsU7L",
+  "2Ac9GrQWif5WNx5jZexfLtiiDbpAFD9128oCxMYsfdvo"
+];
 
 interface NFT {
   mint_address_string: string
@@ -44,7 +46,7 @@ function Member(props: { nft: NFT }) {
   return (
     <Grid item xs={12} sm={6} md={3}>
       <Card>
-        <CardActionArea href={`https://explorer.solana.com/address/${props.nft.mint_address_string}?cluster=devnet`} target="_blank">
+        <CardActionArea href={`https://explorer.solana.com/address/${props.nft.mint_address_string}`} target="_blank">
           <CardMedia
             component="img"
             image={props.nft.image!.toString()}
