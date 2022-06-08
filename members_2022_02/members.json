@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Better Up",
+        "cohort": "2022-02",
+        "image": "BetterUp.png",
+        "token": "99fG65J9MpRBH9qHV2NNoS3pqDe8c5FCvknGeG2KXfLf"
+    },
+    {
+        "name": "Billtrust",
+        "cohort": "2022-02",
+        "image": "Billtrust.png",
+        "token": "7EVrkF7kzjQsA2E9TV8eAJLqRHascUgY9hYG76ScUAsQ"
+    },
+    {
+        "name": "Checkr",
+        "cohort": "2022-02",
+        "image": "Checkr.png",
+        "token": "8uYrn5qowYKC9abWsWwAG3S4wpfD6eLB1z8wfemynvdh"
+    },
+    {
+        "name": "DroneDeploy",
+        "cohort": "2022-02",
+        "image": "DroneDeploy.png",
+        "token": "Gur4VV1iRjda6w1P5y2cxjQ3ygdPoZBxcGKZcv5uhos7"
+    },
+    {
+        "name": "Dropbox",
+        "cohort": "2022-02",
+        "image": "Dropbox.png",
+        "token": ""
+    },
+    {
+        "name": "Hustle",
+        "cohort": "2022-02",
+        "image": "Hustle.png",
+        "token": ""
+    },
+    {
+        "name": "LaunchDarkly",
+        "cohort": "2022-02",
+        "image": "LaunchDarkly.png",
+        "token": ""
+    },
+    {
+        "name": "Rodan & Fields",
+        "cohort": "2022-02",
+        "image": "RodanFields.png",
+        "token": ""
+    },
+    {
+        "name": "Rapid7",
+        "cohort": "2022-02",
+        "image": "Rapid7.png",
+        "token": ""
+    },
+    {
+        "name": "Remitly",
+        "cohort": "2022-02",
+        "image": "Remitly.png",
+        "token": ""
+    },
+    {
+        "name": "Typeform",
+        "cohort": "2022-02",
+        "image": "Typeform.png",
+        "token": ""
+    },
+    {
+        "name": "Profitable Ideas Exchange",
+        "cohort": "2022-02",
+        "image": "PIE.png",
+        "token": ""
+    }
+]

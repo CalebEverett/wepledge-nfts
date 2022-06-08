@@ -54,9 +54,9 @@ dependencies = [
 
 [[package]]
 name = "arloader"
-version = "0.1.55"
+version = "0.1.63"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9364ddbe14529d814d00a2d654dfd3f3e977da90371aa914f45d5ae2f5f040ac"
+checksum = "44047b70f67d64638ab25360bc0f94569119aec0b3a14aa20a60093aa7244dbf"
 dependencies = [
  "avro-rs",
  "base64 0.13.0",
@@ -1036,9 +1036,9 @@ dependencies = [
 
 [[package]]
 name = "infer"
-version = "0.6.0"
+version = "0.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3fe51fa1be60e2a136243674bf4b938279ebddc7019dd5671211e375145759e9"
+checksum = "20b2b533137b9cad970793453d4f921c2e91312a6d88b1085c07bc15fc51bb3b"
 
 [[package]]
 name = "instant"

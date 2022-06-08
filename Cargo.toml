@@ -6,7 +6,7 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-arloader = "0.1.55"
+arloader = "0.1.63"
 glob = "0.3.0"
 serde = "1.0.136"
 serde_json = "1.0.78"

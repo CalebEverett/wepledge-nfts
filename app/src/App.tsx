@@ -25,7 +25,19 @@ let mint_address_strings = [
   "Eq4xw6ETFoYqh8SihsYS4Gbu3Pc6AjcdNtgrHcZ1sJmf",
   "JT9FxzoivUfNaE6twVpbuWVF9aTBx681CVaNiXzxQWt",
   "DRAydboahjhf5UhgWRB9k2TTbBtZuvk4DH7uvePLsU7L",
-  "2Ac9GrQWif5WNx5jZexfLtiiDbpAFD9128oCxMYsfdvo"
+  "2Ac9GrQWif5WNx5jZexfLtiiDbpAFD9128oCxMYsfdvo",
+  "99fG65J9MpRBH9qHV2NNoS3pqDe8c5FCvknGeG2KXfLf",
+  "7EVrkF7kzjQsA2E9TV8eAJLqRHascUgY9hYG76ScUAsQ",
+  "8uYrn5qowYKC9abWsWwAG3S4wpfD6eLB1z8wfemynvdh",
+  "Gur4VV1iRjda6w1P5y2cxjQ3ygdPoZBxcGKZcv5uhos7",
+  "H4hjEMQ8Rc7BdRqQcovHh9TAyoQMEzvRyYndFx4UgNrA",
+  "HG9kbCFKd7Jr3T62RtGwon5hbiu4oGTyK1Nzn1VffUc7",
+  "DhVuBZg3YUhon6svnFxX93TEWbqZi8wNFM1oGF1xBAA7",
+  "8n3VAt4taa7X7NJiVZRNKBeEkhhGmMWe8Qq3Fkj24Sqz",
+  "CJj8q1oTkcd5fzZgoCTcLiy1ixZ66H1iWuQ3p4VB3Ghf",
+  "ZPoW3xniwz2hNfiWfUccpengviUo3xD4FEbJBR4Wwmg",
+  "HCReEdMouqfirXAJ71H1xF18kwZX2bMnowPNsg3ziCqW",
+  "EBZM1qnH6Cs18tFhxkzdW4w9ZvcA7ez7fjXXjBY2GRk7"
 ];
 
 interface NFT {
@@ -112,6 +124,14 @@ function App() {
       </Box>
       <Grid container spacing={3}>
         {nfts.filter(nft => nft.cohort === "2021-07").map((nft, i) => <Member nft={nft} key={i.toString()} />)}
+      </Grid >
+      <Box sx={{ my: 4 }}>
+        <Typography variant="h5" component="h1" gutterBottom color="textSecondary">
+          2022-02 Cohort
+        </Typography>
+      </Box>
+      <Grid container spacing={3}>
+        {nfts.filter(nft => nft.cohort === "2022-02").map((nft, i) => <Member nft={nft} key={i.toString()} />)}
       </Grid >
     </Container>
   );
